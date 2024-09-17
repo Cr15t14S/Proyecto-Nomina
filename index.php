@@ -48,8 +48,12 @@
                             <!-- Fila inicial -->
                             <tr class='bg-custom'>
                                 <td><input class='form-control' type='text' name='nomb[]' required></td>
-                                <td><input class='form-control' type='text' name='cent[]' required></td>
-                                <td><select class='form-control' name='carg[]'  >
+                                <td><select class='form-control' name='cent[]'>
+                                <option value="Administración">Administración</option>
+                                <option value="Las Delicias - Villavicencio">Las Delicias - Villavicencio</option>
+                                <option value="Mangos y Naranjos - Tausa">Mangos y Naranjos - Tausa</option>
+                                </select></td>
+                                <td><select class='form-control' name='carg[]'>
                                 <option value="Gerente">Gerente</option>
                                 <option value="Subgerente">Subgerente</option>
                                 <option value="Cordinador Agro">Cordinador Agro</option>
@@ -59,11 +63,11 @@
                                 <option value="Servicios Generales">Servicios Generales</option>
                                 <option value="Coor administrativa">Coor administrativa</option>
                                 </select></td>
-                                <td><input class='form-control' type='number' name='id[]' required></td>
-                                <td><input class='form-control' type='number' name='suel[]' required></td>
+                                <td><input class='form-control' type='number' name='id[]' min="0" required></td>
+                                <td><input class='form-control' type='number' name='suel[]' min="1300000" required></td>
                                 <td><input class='form-control' type='number' name='dias[]' min="1" max="31" required></td>
                                 <td><input class='form-control' type='number' name='diasEPS[]' min="0" max="90"></td>
-                                <td><input class='form-control' type='number' name='diasARL[]'></td>
+                                <td><input class='form-control' type='number' name='diasARL[]' min="0" max="90"></td>
                                 <td><input class='form-control' type='number' name='Hnoc[]' min="0" max="372"></td>
                                 <td><input class='form-control' type='number' name='Hdomin[]' min="0" max="96"></td>
                             </tr>
