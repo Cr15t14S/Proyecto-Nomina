@@ -61,7 +61,7 @@
                         </tbody>
                     </table>
                     <button type="button" class="btn btn-success" id="agregar-fila">
-                        <i class="fa fa-plus" aria-hidden="true"></i> Añadir Fila
+                        <i class="fa fa-plus" aria-hidden="true"></i> Añadir Filass
                     </button>
                     <br><br>
                     <input class="btn btn-primary" type='submit' value='Enviar'>
