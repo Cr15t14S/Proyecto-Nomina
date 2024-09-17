@@ -50,6 +50,12 @@ $tam = count($nom);
         <td>Nombre</td>
         <td>Salario</td>
         <td>Salario según Días Laborados</td>
+        <td>Auxtrans</td>
+        <td>EPS</td>
+        <td>ARL</td>
+        <td>Recargo</td>
+        <td>HDomin</td>
+        <td>Total</td>
     </tr>
     <?php
     for ($i = 0; $i < $tam; $i++) {
@@ -72,6 +78,7 @@ $tam = count($nom);
 <?php
 // Generación del PDF
 require_once 'vendor/autoload.php';
+
 use Dompdf\Dompdf;
 
 $dompdf = new DOMPDF();
