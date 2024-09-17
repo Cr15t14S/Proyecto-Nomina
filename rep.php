@@ -58,13 +58,13 @@
                         $tam = count($nom);
                         
                         for ($i = 0; $i < $tam; $i++) {
-                            $sal2 = ($suel[$i] / 30) * $dias[$i];
-                            $Auxtrans = (5300 * $dias[$i]);
-                            $EPS2= ($sal2/66.66) * $EPS[$i] ;
-                            $ARL2 = ($suel[$i] / 30) * $ARL[$i];
-                            $Recargo2=  ((($suel[$i] / 30) /8) * 0.35) * $Recargo[$i];
-                            $HDomin2=  ((($suel[$i] / 30) /8) * 0.75) * $HDomin[$i];
-                            $Total= $sal2 + $Auxtrans + $EPS2 + $ARL2 + $Recargo2 + $HDomin2;
+                            $sal2[$i] = ($suel[$i] / 30) * $dias[$i];
+                            $Auxtrans[$i] = (5300 * $dias[$i]);
+                            $EPS2 [$i]= ($sal2[$i]/66.66) * $EPS[$i] ;
+                            $ARL2[$i]= ($suel[$i] / 30) * $ARL[$i];
+                            $Recargo2 [$i]=   ((($suel[$i] / 30) /8) * 0.35) * $Recargo[$i];
+                            $HDomin2 [$i]=  ((($suel[$i] / 30) /8) * 0.75) * $HDomin[$i];
+                            $Total [$i]= $sal2[$i] + $Auxtrans[$i] + $EPS2[$i]+ $ARL2[$i] + $Recargo2[$i] + $HDomin2[$i];
 
                             echo "<tr class='bg-custom'>
                                 <td class='text-center'>$id[$i]<input class='form-control d-none' type='number' name='id[]' value='{$id[$i]}' readonly></td>
@@ -73,13 +73,13 @@
                                 <input class='form-control d-none' type='text' name='cent[]' value='{$cen[$i]}' readonly>
                                 <td class='text-center'>$suel[$i]<input class='form-control d-none' type='number' name='suel[]' value='{$suel[$i]}' readonly></td>
                                 <input class='form-control d-none' type='number' name='dias[]' value='{$dias[$i]}' readonly>
-                                <td class='text-center'>$sal2<input class='form-control d-none' type='number' name='sal2' value='{$sal2}' readonly></td>
-                                <td class='text-center'>$Auxtrans<input class='form-control d-none' type='number' name='    Auxtrans' value='{$Auxtrans}' readonly></td>
-                                <td class='text-center'>$EPS[$i]<input class='form-control d-none' type='number' name='EPS[]' value='{$EPS[$i]}' readonly></td>
-                                <td class='text-center'>$ARL2<input class='form-control d-none' type='number' name='ARL2' value='{$ARL2}' readonly></td>
-                                <td class='text-center'>$Recargo2<input class='form-control d-none' type='number' name='Recargo' value='{$Recargo2}' readonly></td>
-                                <td class='text-center'>$HDomin2<input class='form-control d-none' type='number' name='HDomin' value='{$HDomin2}' readonly></td>
-                                <td class='text-center'>$Total<input class='form-control d-none' type='number' name='Total' value='{$Total}' readonly></td>
+                                <td class='text-center'>$sal2[$i]<input class='form-control d-none' type='number' name='sal2[]' value='{$sal2[$i]}' readonly></td>
+                                <td class='text-center'>$Auxtrans[$i]<input class='form-control d-none' type='number' name='Auxtrans2[]' value='{$Auxtrans[$i]}' readonly></td>
+                                <td class='text-center'>$EPS2[$i]<input class='form-control d-none' type='number' name='EPS2[]' value='{$EPS2[$i]}' readonly></td>
+                                <td class='text-center'>$ARL2[$i]<input class='form-control d-none' type='number' name='ARL2[]' value='{$ARL2[$i]}' readonly></td>
+                                <td class='text-center'>$Recargo2[$i]<input class='form-control d-none' type='number' name='Recargo2[]' value='{$Recargo2[$i]}' readonly></td>
+                                <td class='text-center'>$HDomin2[$i]<input class='form-control d-none' type='number' name='HDomin2[]' value='{$HDomin2[$i]}' readonly></td>
+                                <td class='text-center'>$Total[$i]<input class='form-control d-none' type='number' name='Total[]' value='{$Total[$i]}' readonly></td>
 
                             </tr>";
                         }

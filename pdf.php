@@ -9,12 +9,12 @@ $id = $_REQUEST['id'] ?? [];
 $suel = $_REQUEST['suel'] ?? [];
 $dias = $_REQUEST['dias'] ?? [];
 $sal2 = $_REQUEST['sal2'] ?? [];
-$Auxtrans= $_REQUEST['Auxtrans'] ?? [];
-$EPS= $_REQUEST['EPS'] ?? [];
-$ARL= $_REQUEST['ARL'] ?? [];
-$Recargo= $_REQUEST['Recargo'] ?? [];
-$HDomin= $_REQUEST['HDomin'] ?? [];
-$Total= $_REQUEST['Total'] ?? [];
+$Auxtrans2= $_REQUEST['Auxtrans2'] ?? [];
+$EPS2= $_REQUEST['EPS2'] ?? [];
+$ARL2= $_REQUEST['ARL2'] ?? [];
+$Recargo2= $_REQUEST['Recargo2'] ?? [];
+$HDomin2= $_REQUEST['HDomin2'] ?? [];
+$Total2= $_REQUEST['Total'] ?? [];
 $tam = count($nom);
 
 ?>
@@ -64,12 +64,12 @@ $tam = count($nom);
                 <td>{$nom[$i]}</td>
                 <td>{$suel[$i]}</td>
                 <td>{$sal2[$i]}</td>
-                <td>{$Auxtrans[$i]}</td>
-                <td>{$EPS[$i]}</td>
-                <td>{$ARL[$i]}</td>
-                <td>{$Recargo[$i]}</td>
-                <td>{$HDomin[$i]}</td>
-                <td>{$Total[$i]}</td>
+                <td>{$Auxtrans2[$i]}</td>
+                <td>{$EPS2[$i]}</td>
+                <td>{$ARL2[$i]}</td>
+                <td>{$Recargo2[$i]}</td>
+                <td>{$HDomin2[$i]}</td>
+                <td>{$Total2[$i]}</td>
               </tr>";
     }
     ?>    

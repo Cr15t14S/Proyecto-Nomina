@@ -50,14 +50,14 @@
                                 <td><input class='form-control' type='text' name='nomb[]' required></td>
                                 <td><input class='form-control' type='text' name='cent[]' required></td>
                                 <td><select class='form-control' name='carg[]'  >
-                                <option value="Geren">Gerente</option>
-                                <option value="Sub">Subgerente</option>
-                                <option value="Cordi">Cordinador Agro</option>
-                                <option value="Asis">Asistente varios</option>
-                                <option value="Mayor">Mayordomo</option>
-                                <option value="Aux">Aux mayordomo</option>
-                                <option value="Serv">Servicios Generales</option>
-                                <option value="Coor">Coor administrativa</option>
+                                <option value="Gerente">Gerente</option>
+                                <option value="Subgerente">Subgerente</option>
+                                <option value="Cordinador Agro">Cordinador Agro</option>
+                                <option value="Asistente varios">Asistente varios</option>
+                                <option value="Mayordomo">Mayordomo</option>
+                                <option value="Aux mayordomo">Aux mayordomo</option>
+                                <option value="Servicios Generales">Servicios Generales</option>
+                                <option value="Coor administrativa">Coor administrativa</option>
                                 </select></td>
                                 <td><input class='form-control' type='number' name='id[]' required></td>
                                 <td><input class='form-control' type='number' name='suel[]' required></td>
