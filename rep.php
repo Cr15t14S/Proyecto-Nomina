@@ -58,13 +58,13 @@
                         $tam = count($nom);
                         
                         for ($i = 0; $i < $tam; $i++) {
-                            $sal2[$i] = ($suel[$i] / 30) * $dias[$i];
-                            $Auxtrans[$i] = (5300 * $dias[$i]);
-                            $EPS2 [$i]= ($sal2[$i]/66.66) * $EPS[$i] ;
-                            $ARL2[$i]= ($suel[$i] / 30) * $ARL[$i];
-                            $Recargo2 [$i]=   ((($suel[$i] / 30) /8) * 0.35) * $Recargo[$i];
-                            $HDomin2 [$i]=  ((($suel[$i] / 30) /8) * 0.75) * $HDomin[$i];
-                            $Total [$i]= $sal2[$i] + $Auxtrans[$i] + $EPS2[$i]+ $ARL2[$i] + $Recargo2[$i] + $HDomin2[$i];
+                            $sal2[$i] = round(($suel[$i] / 30) * $dias[$i],2);
+                            $Auxtrans[$i] = round((5300 * $dias[$i]),2);
+                            $EPS2 [$i]= round(($sal2[$i]/66.66) * $EPS[$i],3) ;
+                            $ARL2[$i]= round(($suel[$i] / 30) * $ARL[$i],3);
+                            $Recargo2 [$i]=  round (((($suel[$i] / 30) /8) * 0.35) * $Recargo[$i],2);
+                            $HDomin2 [$i]=  round(((($suel[$i] / 30) /8) * 0.75) * $HDomin[$i],2);
+                            $Total [$i]=round($sal2[$i] + $Auxtrans[$i] + $EPS2[$i]+ $ARL2[$i] + $Recargo2[$i] + $HDomin2[$i],2);
 
                             echo "<tr class='bg-custom'>
                                 <td class='text-center'>$id[$i]<input class='form-control d-none' type='number' name='id[]' value='{$id[$i]}' readonly></td>
