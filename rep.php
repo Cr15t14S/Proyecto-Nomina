@@ -65,7 +65,7 @@
                             $Recargo2 [$i]=  round (((($suel[$i] / 30) /8) * 0.35) * $Recargo[$i],1);
                             $HDomin2 [$i]=  round(((($suel[$i] / 30) /8) * 0.75) * $HDomin[$i],1);
                             $Total [$i]=round($sal2[$i] + $Auxtrans[$i] + $EPS2[$i]+ $ARL2[$i] + $Recargo2[$i] + $HDomin2[$i],1);
-
+                            $Totales = Totales + Total [$i];
                             echo "<tr class='bg-custom'>
                                 <td class='text-center'>$id[$i]<input class='form-control d-none' type='number' name='id[]' value='{$id[$i]}' readonly></td>
                                 <td class='text-center'>$nom[$i]<input class='form-control d-none' type='text' name='nomb[]' value='{$nom[$i]}' readonly></td>
@@ -80,7 +80,7 @@
                                 <td class='text-center'>$Recargo2[$i]<input class='form-control d-none' type='number' name='Recargo2[]' value='{$Recargo2[$i]}' readonly></td>
                                 <td class='text-center'>$HDomin2[$i]<input class='form-control d-none' type='number' name='HDomin2[]' value='{$HDomin2[$i]}' readonly></td>
                                 <td class='text-center'>$Total[$i]<input class='form-control d-none' type='number' name='Total[]' value='{$Total[$i]}' readonly></td>
-
+                                <input class='form-control d-none' type='number' name='Totales' value='{$Totales}' readonly>
                             </tr>";
                         }
                         ?>

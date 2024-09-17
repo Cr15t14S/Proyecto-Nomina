@@ -58,6 +58,7 @@ $tam = count($nom);
         <td>Total</td>
     </tr>
     <?php
+
     for ($i = 0; $i < $tam; $i++) {
         echo "<tr class='bg-custom'>
                 <td>{$id[$i]}</td>
@@ -70,8 +71,13 @@ $tam = count($nom);
                 <td>{$Recargo2[$i]}</td>
                 <td>{$HDomin2[$i]}</td>
                 <td>{$Total2[$i]}</td>
-              </tr>";
+              </tr>";         
     }
+        $totales= array_sum($Total2);
+        echo "<tr>
+        <td colspan='9' align= 'center'>Total de nomina a pagar</td>
+        <td  >{$totales}</td>
+        </tr>";
     ?>    
 </table>
 
