@@ -77,7 +77,7 @@ $tam = count($nom);
 
 <?php
 // Generación del PDF
-require_once 'vendor/autoload.php';
+require_once 'dompdf/autoload.inc.php';
 
 use Dompdf\Dompdf;
 
