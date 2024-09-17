@@ -33,7 +33,7 @@
                                 <tr>
                                     <td class="font-weight-bold text-center">Nombre</td>
                                     <td class="font-weight-bold text-center">Centro de costo</td>
-                                    <td class="font-weight-bold text-center">Cargo</td>
+                                    <td class="font-weight-bold text-center">   Cargo   </td>
                                     <td class="font-weight-bold text-center">No. Identificacion</td>
                                     <td class="font-weight-bold text-center">Sueldo</td>
                                     <td class="font-weight-bold text-center">Dias laborados</td>
@@ -47,21 +47,30 @@
                         <tbody id="tabla-dinamica">
                             <!-- Fila inicial -->
                             <tr class='bg-custom'>
-                                <td><input class='form-control' type='text' name='nomb[]'></td>
-                                <td><input class='form-control' type='text' name='cent[]'></td>
-                                <td><input class='form-control' type='text' name='carg[]'></td>
-                                <td><input class='form-control' type='number' name='id[]'></td>
-                                <td><input class='form-control' type='number' name='suel[]'></td>
-                                <td><input class='form-control' type='number' name='dias[]'></td>
-                                <td><input class='form-control' type='number' name='diasEPS[]' min="3" max="90"></td>
+                                <td><input class='form-control' type='text' name='nomb[]' required></td>
+                                <td><input class='form-control' type='text' name='cent[]' required></td>
+                                <td><select class='form-control' name='carg[]'  >
+                                <option value="Geren">Gerente</option>
+                                <option value="Sub">Subgerente</option>
+                                <option value="Cordi">Cordinador Agro</option>
+                                <option value="Asis">Asistente varios</option>
+                                <option value="Mayor">Mayordomo</option>
+                                <option value="Aux">Aux mayordomo</option>
+                                <option value="Serv">Servicios Generales</option>
+                                <option value="Coor">Coor administrativa</option>
+                                </select></td>
+                                <td><input class='form-control' type='number' name='id[]' required></td>
+                                <td><input class='form-control' type='number' name='suel[]' required></td>
+                                <td><input class='form-control' type='number' name='dias[]' min="1" max="31" required></td>
+                                <td><input class='form-control' type='number' name='diasEPS[]' min="0" max="90"></td>
                                 <td><input class='form-control' type='number' name='diasARL[]'></td>
-                                <td><input class='form-control' type='number' name='Hnoc[]'></td>
-                                <td><input class='form-control' type='number' name='Hdomin[]'></td>
+                                <td><input class='form-control' type='number' name='Hnoc[]' min="0" max="372"></td>
+                                <td><input class='form-control' type='number' name='Hdomin[]' min="0" max="96"></td>
                             </tr>
                         </tbody>
                     </table>
                     <button type="button" class="btn btn-success" id="agregar-fila">
-                        <i class="fa fa-plus" aria-hidden="true"></i> Añadir Filass
+                        <i class="fa fa-plus" aria-hidden="true"></i> Añadir Filas
                     </button>
                     <br><br>
                     <input class="btn btn-primary" type='submit' value='Enviar'>

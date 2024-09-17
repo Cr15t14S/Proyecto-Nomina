@@ -60,8 +60,7 @@
                         for ($i = 0; $i < $tam; $i++) {
                             $sal2 = ($suel[$i] / 30) * $dias[$i];
                             $Auxtrans = (5300 * $dias[$i]);
-                            //$EPS2= ($suel2/66.66) * $EPS ;
-                            $EPS2=0;
+                            $EPS2= ($sal2/66.66) * $EPS[$i] ;
                             $ARL2 = ($suel[$i] / 30) * $ARL[$i];
                             $Recargo2=  ((($suel[$i] / 30) /8) * 0.35) * $Recargo[$i];
                             $HDomin2=  ((($suel[$i] / 30) /8) * 0.75) * $HDomin[$i];
